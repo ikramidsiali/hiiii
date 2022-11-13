@@ -1,22 +1,140 @@
 <!DOCTYPE html>
 <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar">
+        <h2>English</h2>
+        <span class="home">
+            <h2 style="cursor: pointer; padding-right: 10px;" onclick="home()">Home</h2>
+            <i style="display: inline-block; font-size: 30px;" class="fa fa-home" aria-hidden="true"></i>   
+        </span>
+    </nav>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="ikram_IDSIALI">
-        <meta name="description" content="this page containes things i am learning how to creat">
-        <title>my first webpage</title>
-        <link rel="icon" href="html5.png" type="image/x-icon"> 
-        <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+    <div class="main">
+        <div class="landing">
+            <h1 style="margin-bottom: 40px;" >Choose the vocabulary that you want to learn:</h1> 
+            <div class="vocabulary"> 
+                <div class="categories"> <img src="categoriesFolder/colors.png"> <h3 onclick="showCategory(color)">Colors</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/organs.png"> <h3 onclick="showCategory(organ)">organs</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/fruits.png"> <h3 onclick="showCategory(fruit)">fruits</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/vegetables.png"> <h3 onclick="showCategory(vegetable)">vegetables</h3> </div>
+            </div>
+        </div>
 
-    <body>
-       <h1>hello world </h1> 
+        <div class="colors hide">     
+            <div class="title"> <h2>Colors</h2> <img src="categoriesFolder/colors.png">  </div>
+            <h2> <u>Most known:</u> </h2> <br>
+            <button style="background-color: red;" onclick="red.play()">red</button>
+            <button style="background-color: pink; color: black" onclick="pink.play()">pink</button>
+            <button style="background-color: gold; color: black;" onclick="gold.play()">gold</button>
+            <button style="background-color: yellow; color: black;" onclick="yellow.play()">yellow</button>
+            <button style="background-color: orange;" onclick="orange.play()">orange</button>
+            <button style="background-color: green;" onclick="green.play()">green</button>
+            <button style="background-color: blue;" onclick="blue.play()">blue</button>
+            <button style="background-color: purple;" onclick="purple.play()">purple</button>
+            <button style="background-color: brown;" onclick="brown.play()">brown</button>
+            <button style="background-color: white; color: black;" onclick="white.play()">white</button>
+            <button style="background-color: silver; color: black;" onclick="silver.play()">silver</button>
+            <button style="background-color: gray;" onclick="gray.play()">gray</button>
+            <button style="background-color: black; " onclick="black.play()">black</button> <br><br><br><br>
+            <h2> <u>Less known:</u> </h2> <br>
+            <button style="background-color: #FF2400;" onclick="scarlet.play()">scarlet</button>
+            <button style="background-color: salmon;" onclick="salmon.play()">salmon</button>
+            <button style="background-color: ivory; color: black;" onclick="ivory.play()">ivory</button>
+            <button style="background-color: beige; color: black;" onclick="beige.play()">beige</button>
+            <button style="background-color: #FFDB58; color: black;" onclick="mustard.play()">mustard</button>
+            <button style="background-color: olive;" onclick="olive.play()">olive</button>
+            <button style="background-color: #50C878; color: black;" onclick="emerald.play()">emerald</button>
+            <button style="background-color: #008080;" onclick="teal.play()">teal</button>
+            <button style="background-color: turquoise; color: black;" onclick="turquoise.play()">turquoise</button>
+            <button style="background-color: maroon;" onclick="maroon.play()">maroon</button>
+            <button style="background-color: #9169c1;" onclick="lavender.play()">lavender</button>
+            <button style="background-color: violet;" onclick="violet.play()">violet</button>
+            <button style="background-color: fuchsia;" onclick="fuchsia.play()">fuchsia</button>
+            <button style="background-color: indigo;" onclick="indigo.play()">indigo</button>
+            <button style="background-color: navy;" onclick="navy.play()">navy</button>
+        </div>
 
-       <hr>
+    <div class="organs hide">
+        <div class="image" style="height: 500px; width: 500px; padding: 0px;"> <img style="height: 500px; width: 500px; " src="organsFolder/organsss.png"> <h3 class="brain" onclick="lungs.play()">brain</h3> <h3 class="oesophagus">oesophagus</h3> </div> 
+    </div>
 
-       <h2>i am ready to <em>learn <abbr title="hypertex markup langage">html</abbr></em></h2>
-       <p>this is my <strong>first webpage</strong>.</p>
+    <!-- <div class="organs hide">
+        <div class="title"> <h2>organs</h2> <img src="categoriesFolder/organs.png">  </div>
+        <div class="bodyPart"> <img src="organsFolder/liver.png"> <h3 onclick="liver.play()">liver</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/lungs.jpg"> <h3 onclick="lungs.play()">lungs</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/kidney.jpg"> <h3 onclick="kidney.play()">kidney</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/brain.jpg"> <h3 onclick="brain.play()">brain</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/heart.png"> <h3 onclick="heart.play()">heart</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/stomach.png"> <h3 onclick="stomach.play()">stomach</h3> </div>
+        <div class="bodyPart"> <img src="organsFolder/intestines.png"> <h3 onclick="intestines.play()">intestines</h3> </div>
+    </div> -->
 
-    </body>
+    <div class="fruits hide">
+        <div class="title"> <h2>fruits</h2> <img src="categoriesFolder/fruits.png">  </div>
+        <div class="aFruit"> <img src="fruitFolder/loquat.png"> <h3 onclick="loquat.play()">loquat</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/persimmon.png"> <h3 onclick="persimmon.play()">persimmon</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pomegranate.png"> <h3 onclick="pomegranate.play()">pomegranate</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pear.png"> <h3 onclick="pear.play()">pear</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/apricot.png"> <h3 onclick="apricot.play()">apricot</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/nectarine.png"> <h3 onclick="nectarine.play()">nectarine</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/peach.png"> <h3 onclick="peach.play()">peach</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pineapple.png"> <h3 onclick="pineapple.play()">pineapple</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/papaya.png"> <h3 onclick="papaya.play()">papaya</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/mango.png"> <h3 onclick="mango.play()">mango</h3> </div>    
+        <div class="aFruit"> <img src="fruitFolder/fig.png"> <h3 onclick="fig.play()">fig</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/cherry.png"> <h3 onclick="cherry.play()">cherry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/raspberry.png"> <h3 onclick="raspberry.play()">raspberry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/blueberry.png"> <h3 onclick="blueberry.play()">blueberry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/strawberry.png"> <h3 onclick="strawberry.play()">strawberry</h3> </div> 
+        <div class="aFruit"> <img src="fruitFolder/coconut.png"> <h3 onclick="coconut.play()">coconut</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/kiwi.png"> <h3 onclick="kiwi.play()">kiwi</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/avocado.png"> <h3 onclick="avocado.play()">avocado</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/grapes.png"> <h3 onclick="grapes.play()">grapes</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/apple.png"> <h3 onclick="apple.play()">apple</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/custardApple.png"> <h3 onclick="custardApple.play()">custard-apple</h3> </div>
+    </div>
+
+    <div class="vegetables hide">
+        <div class="title"> <h2>vegetables</h2> <img src="categoriesFolder/vegetables.png">  </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/cauliflower.png"> <h3 onclick="cauliflower.play()">cauliflower</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/cabbage.png"> <h3 onclick="cabbage.play()">cabbage</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/lettuce.png"> <h3 onclick="lettuce.play()">lettuce</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/zucchini.png"> <h3 onclick="zucchini.play()">zucchini</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/parsley.png"> <h3 onclick="parsley.play()">parsley</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/eggplant.png"> <h3 onclick="eggplant.play()">eggplant</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/beet.png"> <h3 onclick="beet.play()">beet</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/turnip.png"> <h3 onclick="turnip.play()">turnip</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/radish.png"> <h3 onclick="radish.play()">radish</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/tomato.png"> <h3 onclick="tomato.play()">tomato</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/potato.png"> <h3 onclick="potato.play()">potato</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/sweet potato.png"> <h3 onclick="sweetPotato.play()">sweet potato</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/mushroom.png"> <h3 onclick="mushroom.play()">mushroom</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/garlic.png"> <h3 onclick="garlic.play()">garlic</h3> </div>    
+        <div class="aVegetable"> <img src="vegetablesFolder/onion.png"> <h3 onclick="onion.play()">onion</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/carrot.png"> <h3 onclick="carrot.play()">carrot</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/broccoli.png"> <h3 onclick="broccoli.play()">broccoli</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/pea.png"> <h3 onclick="pea.play()">pea</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/celery.png"> <h3 onclick="celery.play()">celery</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/artichoke.png"> <h3 onclick="artichoke.play()">artichoke</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/cucumber.png"> <h3 onclick="cucumber.play()">cucumber</h3> </div>
+        <div class="aVegetable"> <img src="vegetablesFolder/pumpkin.png"> <h3 onclick="pumpkin.play()">pumpkin</h3> </div>      
+        <div class="aVegetable"> <img src="vegetablesFolder/chili pepper.png"> <h3 onclick="chiliPepper.play()">chili pepper</h3> </div>
+      
+        <div class="aVegetable"> <img src="vegetablesFolder/chili pepper.png"> <h3 onclick="chiliPepper.play()">chili pepper</h3> </div>
+    </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>

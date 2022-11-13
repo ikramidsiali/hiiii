@@ -1,0 +1,75 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+
+.navbar {
+    background-color: antiquewhite;
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid rgb(45, 29, 69);
+    padding: 10px; }
+
+.navbar:hover .fa { color: brown; }
+
+.home { 
+    display: flex;
+    flex-direction: row; }
+
+.main { 
+    margin-top: 50px;
+    padding: 30px; }
+
+h1 { text-align: center; }
+
+.vocabulary , .fruits , .vegetables {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    
+.categories , .aFruit , .aVegetable { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex: 1;
+    padding: 10px; }
+
+.title { 
+    text-align: center;
+    flex: 100%; 
+    margin-bottom: 30px; }
+
+button {
+    color: white;
+    padding: 10px;
+    margin: 3px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer; }
+
+img { 
+    width: 100px; 
+    height:90px; }
+
+h3 { cursor: pointer; }
+
+.hide { display: none !important; }
+
+.organs {display: grid; place-items: center;}
+
+.image {position: relative;} 
+
+.brain { 
+    position: absolute;
+    top: 24px;
+    left: 34px; }
+
+.oesophagus { 
+    position: absolute;
+    top: 130px;
+    left: 13px; }
