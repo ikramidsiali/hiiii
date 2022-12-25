@@ -21,18 +21,18 @@
     flex-direction: row; }
 
 .main { 
-    margin-top: 100px;
+    margin-top: 80px;
     padding: 2px; }
 
 h1 { text-align: center; }
 
-.vocabulary , .fruits , .vegetables , .kitchenTools , .nature , .bodyPart {
+.vocabulary , .fruits , .vegetables , .kitchenTools , .animals , .bodyPart , .maths , .foods , .sports , .calendars , .schools , .Weather , .jobs , .Health , .publicPlace , .roads , .Clothes{
     display: flex;
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap; }
     
-.categories , .aFruit , .aVegetable , .tools , .Nature , .aPart { 
+.categories , .aFruit , .aVegetable , .tools , .animal , .aPart , .math , .aFood , .aSport , .theCalendar , .theSchool , .theWeather ,.aJob , .theHealth , .aPublicPlace , .theRoad , .theClothes { 
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -46,7 +46,7 @@ h1 { text-align: center; }
 
 button {
     color: white;
-    padding: 10px;
+    padding: 1px;
     margin: 3px;
     width: 100px;
     height: 50px;
@@ -66,67 +66,72 @@ h3 { cursor: pointer; text-align: center; }
 
 .anOrgan {
     position: absolute;
-    background-color: transparent;
-    width: 100px;
+    background-color: white; 
+    color: black;
+    width: 105px;
     height: 30px;} 
 
-.brain { top: 16px; left: 0px; }          .head { top: 21px; left: 340px; }
-.eyes { top: 49px; left: 0px; }           .ears { top: 60px; left: 340px; }
-.teeth {  top: 80px; left: 0px; }         .lungs { top: 182px; left: 340px; }   
-.oesophagus { top: 120px; left: 0px; }    .heart{ top: 215px; left: 340px; }
-.liver { top: 270px; left: 0px; }         .stomach { top: 270px; left: 340px; }
-.kidney { top: 306px; left: 0px; }        .smallIntestine { top: 360px; left: 340px; }
-.largeIntestine { top: 374px; left: 0px; }
+.brain { top: 10px; left: 0px; }          .heado { top: 19px; left: 335px; }
+.eyes { top: 45px; left: 0px; }           .ears { top: 56px; left: 335px; }
+.teeth {  top: 80px; left: 0px; }         .lungs { top: 182px; left: 335px; }   
+.oesophagus { top: 120px; left: 0px; }    .heart{ top: 215px; left: 335px; }
+.liver { top: 273px; left: 0px; }         .stomach { top: 273px; left: 335px; }
+.kidney { top: 309px; left: 0px; }        .smallIntestine { top: 365px; left: 335px; }
+.largeIntestine { top: 376px; left: 0px; }
 
 .body {
     position: absolute;
-    background-color: transparent;
+    background-color: white; 
+    color: black;
     width: 55px;
     height: 25px;}
 
-.neck { top: 2px; left: 0px; }     .shoulder { top: 17px; left: 390px; }  
+.neck { top: 0px; left: 0px; }     .shoulder { top: 17px; left: 390px; }  
 .chest { top: 30px; left: 0px; }   .arm { top: 53px; left: 390px; }
 .nipples { top: 62px; left: 0px; } .back { top: 82px; left: 390px; } 
-.navel { top: 123px; left: 0px; }  .elbow { top: 109px; left: 390px; }
+.navel { top: 120px; left: 0px; }  .elbow { top: 109px; left: 390px; }
 .thigh { top: 215px; left: 0px; }  .hip { top: 135px; left: 390px; } 
-.knee { top: 254px; left: 0px; }   .butt { top: 165px; left: 390px; }  
-.leg { top: 293px; left: 0px; }    .ankle { top: 340px; left: 390px; }
-.toe { top: 370px; left: 0px; }    .heel { top: 368px; left: 390px; }
-.waist { top: 105px; left: 185px; }                                 
-.foot { top: 359px; left: 185px; }   
+.knee { top: 251px; left: 0px; }   .butt { top: 165px; left: 390px; }  
+.leg { top: 292px; left: 0px; }    .ankle { top: 340px; left: 390px; }
+.toe { top: 367px; left: 0px; }    .heel { top: 368px; left: 390px; }
+.waist { top: 103px; left: 185px; }                                 
+.foot { top: 355px; left: 185px; }   
                                  
 .face {
     position: absolute;
-    background-color: transparent;
-    width: 70px;
-    height: 30px;}
+    background-color: white; 
+    color: black;
+    padding: 5px;
+    width: 68px;
+    height: 28px;}
 
 .hair { top: 80px; left: 0px; }     .eyebrows { top: 140px; left: 375px; } 
 .forehead { top: 120px; left: 0px; }.eyelashes { top: 176px; left: 375px; } 
-.eyelid { top: 160px; left: 0px; }  .cheeks { top: 225px; left: 375px; }  
-.nose { top: 200px; left: 0px; }    .jaw { top: 255px; left: 375px; } 
-.nostrils { top: 241px; left: 0px; }.mouth { top: 285px; left: 375px; } 
-.lips { top:281px; left: 0px; }     .chin { top: 315px; left: 375px; } 
+.eyelid { top: 160px; left: 0px; }  .cheeks { top: 227px; left: 375px; }  
+.nose { top: 204px; left: 0px; }   
+.nostrils { top: 244px; left: 0px; }.mouth { top: 278px; left: 375px; } 
+.lips { top:286px; left: 0px; }     .chin { top: 315px; left: 375px; } 
 
 .throat {
     position: absolute;
-    background-color: transparent;
-    width: 80px;
-    height: 32px;} 
-.incisors { top: 0px; left: 183px; } 
-.tonsil { top: 204px; left: 0px; }   .canine { top: 103px; left: 356px; }
-.tong { top: 260px; left: 0px; }     .uvula { top: 184px; left: 356px; }
-.gum { top: 353px; left: 0px; }      .molars { top: 254px; left: 356px; }
-.premolars { top: 301px; left: 356px; }
+    background-color: white; 
+    color: black;
+    width: 79.3px;
+    height: 34px;} 
+.incisors { top: 4px; left: 181px; } 
+.tonsil { top: 200px; left: 0px; }   .canine { top: 103px; left: 350px; }
+.tong { top: 255px; left: 0px; }     .uvula { top: 180px; left: 350px; }
+.molars { top: 249px; left: 350px; }
+.premolars { top: 303px; left: 350px; }
 
 .hand {
     position: absolute;
-    background-color: transparent;
+    background-color: white; 
+    color: black;
     width: 110px;
-    height: 30px;}
+    height: 32px;}
 
 .middleFinger { top: 15px; left: 0px; }  .index { top: 37px; left: 321px; } 
 .ringFinger { top: 65px; left: 0px; }  .nails { top: 80px; left: 321px; } 
-.pinky { top: 114px; left: 0px; }       .thumb { top: 123px; left: 321px; }  
-.palm { top: 164px; left: 0px; }    
+.pinky { top: 114px; left: 0px; }       .thumb { top: 123px; left: 321px; }    
 .wrist { top: 213px; left: 0px; }
