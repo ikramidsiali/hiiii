@@ -4,55 +4,512 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="america.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
 </head>
+
 <body>
+
     <nav class="navbar">
-        <h2>English</h2>
+        <img src="america.png" style="height: 30px; width: 30px; ">
         <span class="home">
-            <h2 style="cursor: pointer; padding-right: 10px;" onclick="home()">Home</h2>
+            <h2 style="cursor: pointer; padding-right: 10px;" onclick="gotoHome()">Home</h2>
             <i style="display: inline-block; font-size: 30px;" class="fa fa-home" aria-hidden="true"></i>   
         </span>
     </nav>
 
     <div class="main">
+
         <div class="landing">
-            <h1 style="margin-bottom: 40px;" >Choose the vocabulary that you want to learn:</h1> 
+            <h1 style="margin-bottom: 50px;" ><u>Choose the vocabulary that you want to learn:</u></h1> 
             <div class="vocabulary"> 
                 <div class="categories"> <img src="categoriesFolder/colors.png"> <h3 onclick="showCategory(color)">Colors</h3> </div>
                 <div class="categories"> <img src="categoriesFolder/body.png"> <h3 onclick="showCategory(organ)">Body</h3> </div>
                 <div class="categories"> <img src="categoriesFolder/fruits.png"> <h3 onclick="showCategory(fruit)">Fruits</h3> </div>
                 <div class="categories"> <img src="categoriesFolder/vegetables.png"> <h3 onclick="showCategory(vegetable)">Vegetables</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/food.png"> <h3 onclick="showCategory(food)">Food</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/weather.png"> <h3 onclick="showCategory(weather)">Weather</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/calendar.png"> <h3 onclick="showCategory(calendar)">Calendar</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/health.png"> <h3 onclick="showCategory(health)">Health</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/sport.png"> <h3 onclick="showCategory(sport)">Sports</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/jobs.png"> <h3 onclick="showCategory(job)">Jobs</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/animals.png"> <h3 onclick="showCategory(animal)">Animals</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/nature.png"> <h3 onclick="showCategory(nature)">Nature</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/road.png"> <h3 onclick="showCategory(road)">Road</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/maths.png"> <h3 onclick="showCategory(math)">Maths</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/school.png"> <h3 onclick="showCategory(school)">School</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/public places.png"> <h3 onclick="showCategory(publicPlaces)">Public places</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/clothes.png"> <h3 onclick="showCategory(clothes)">Clothes</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/home.png"> <h3 onclick="showCategory(home)">Home</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/emotions.png"> <h3 onclick="showCategory(emotion)">Emotions</h3> </div>
                 <div class="categories"> <img src="categoriesFolder/kitchen.png"> <h3 onclick="showCategory(kitchen)">Kitchen</h3> </div>
-                <div class="categories"> <img src="categoriesFolder/Nature.png"> <h3 onclick="showCategory(Nature)">Nature</h3> </div>
+                <div class="categories"> <img src="categoriesFolder/celebrations.png"> <h3 onclick="showCategory(celebration)">Celebrations</h3> </div>
             </div>
         </div>
 
-        <div class="colors hide">     
+        <div class="Nature hide">
+            <h2 class="title"><u>Nature:</u></h2>
+            <div class="theNature"> <img src="vegetablesFolder/tree.png"> <h3>tree</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/soil.png"> <h3>soil</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/plant.png"> <h3>plant</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/flower.png"> <h3>flower</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/leafs.png"> <h3>leafs</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/roots.png"> <h3>roots</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/pot.png"> <h3>pot</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/field.png"> <h3>field</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/rock.png"> <h3>rock</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/mountain.png"> <h3>mountain</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/island.png"> <h3>island</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/waterfall.png"> <h3>waterfall</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/beach.png"> <h3>beach</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/sea.png"> <h3>sea</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/river.png"> <h3>river</h3> </div>
+            <div class="theNature"> <img src="vegetablesFolder/lake.png"> <h3>lake</h3> </div>
+        </div>
+
+        <div class="Clothes hide">
+            <h2 class="title"><u>Clothes:</u></h2>
+            <div class="theClothes"> <img src="vegetablesFolder/bra.png"> <h3>bra</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/tank top.png"> <h3>tank top</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/top.png"> <h3>top</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/jumper.png"> <h3>jumper</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/t-shirt.png"> <h3>t-shirt</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/hoodie.png"> <h3>hoodie</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/jacket.png"> <h3>jacket</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/cardigan.png"> <h3>cardigan</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/vest.png"> <h3>vest</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/bottoms.png"> <h3>bottoms</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/trousers.png"> <h3>trousers</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/leggings.png"> <h3>leggings</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/tights.png"> <h3>tights</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/shorts.png"> <h3>shorts</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/skirt.png"> <h3>skirt</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/dress.png"> <h3>dress</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/overalls.png"> <h3>overalls</h3> </div>
+            <h2 class="title"><u>Accessories:</u></h2>
+            <div class="theClothes"> <img src="vegetablesFolder/cap.png"> <h3>cap</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/hat.png"> <h3>hat</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/scarf.png"> <h3>scarf</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/gloves.png"> <h3>gloves</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/crown.png"> <h3>crown</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/necklace.png"> <h3>necklace</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/head band.png"> <h3>head band</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/hair clip.png"> <h3>hair clip</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/earrings.png"> <h3>earrings</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/piercing.png"> <h3>piercing</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/ring.png"> <h3>ring</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/bracelet.png"> <h3>bracelet</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/watch.png"> <h3>watch</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/belt.png"> <h3>belt</h3> </div>
+            <h2 class="title"><u>Shoes:</u></h2>
+            <div class="theClothes"> <img src="vegetablesFolder/boots.png"> <h3>boots</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/hight heels.png"> <h3>hight heels</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/sandals.png"> <h3>sandals</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/trainers.png"> <h3>trainers</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/sneakers.png"> <h3>sneakers</h3> </div>
+            <div class="theClothes"> <img src="vegetablesFolder/sandals.png"> <h3>sandals</h3> </div>
+        </div>
+
+        <div class="Health hide">
+            <h2 class="title"><u>Sicknesses:</u></h2>
+            <div class="theHealth"> <img src="vegetablesFolder/cold.png"> <h3>cold</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/fever.png"> <h3>fever</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/tonsillitis.png"> <h3>tonsillitis</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/sore throat.png"> <h3>sore throat</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/runny nose.png"> <h3>runny nose</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/cough.png"> <h3>cough</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/shivers.png"> <h3>shivers</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/diarrhea.png"> <h3>diarrhea</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/headache.png"> <h3>headache</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/nausea.png"> <h3>nausea</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/vomiting.png"> <h3>vomiting</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/dizziness.png"> <h3>dizziness</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/flu.png"> <h3>flu</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/asthma.png"> <h3>asthma</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/diabetes.png"> <h3>diabetes</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/fainting.png"> <h3>fainting</h3> </div>
+            <h2 class="title"><u>Medication:</u></h2>
+            <div class="theHealth"> <img src="vegetablesFolder/sirup.png"> <h3>sirup</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/pills.png"> <h3>pills</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/vaccine.png"> <h3>vaccine</h3> </div>
+            <div class="theHealth"> <img src="vegetablesFolder/surgery.png"> <h3>surgery</h3> </div>
+        </div>
+
+        <div class="publicPlace hide">
+            <h2 class="title"><u>PublicPlaces:</u></h2>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/school.png"> <h3>school</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/gym.png"> <h3>gym</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/airport.png"> <h3>airport</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/grocery store.png"> <h3>grocery store</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/salon.png"> <h3>salon</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/zoo.png"> <h3>zoo</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/cinema.png"> <h3>cinema</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/park.png"> <h3>park</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/restaurant.png"> <h3>restaurant</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/cafe.png"> <h3>cafe</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/hospital.png"> <h3>hospital</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/graveyard.png"> <h3>graveyard</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/garden.png"> <h3>garden</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/hotel.png"> <h3>hotel</h3> </div>
+
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aPublicPlace"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+        </div>
+
+        <div class="jobs hide">
+            <h2 class="title"><u>Jobs:</u></h2>
+            <div class="aJob"> <img src="fruitFolder/waiter.png"> <h3>waiter</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/mechanic.png"> <h3>mechanic</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/taxi driver.png"> <h3>taxi driver</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/cashier.png"> <h3>cashier</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/electrician.png"> <h3>electrician</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/hairdresser.png"> <h3>hairdresser</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/cleaner.png"> <h3>cleaner</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/delivery man.png"> <h3>delivery man</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/construction worker.png"> <h3>construction worker</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/farmer.png"> <h3>farmer</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/doctor.png"> <h3>doctor</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/lawyer.png"> <h3>lawyer</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/scientist.png"> <h3>scientist</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/dentist.png"> <h3>dentist</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/architect.png"> <h3>architect</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/pilot.png"> <h3>pilot</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/plumber.png"> <h3>plumber</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/chef.png"> <h3>chef</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+            <div class="aJob"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+        </div>
+
+        <div class="roads hide">
+            <h2 class="title"><u>Vehicles:</u></h2>
+            <div class="theRoad"> <img src="fruitFolder/tramway.png"> <h3>tramway</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/airplane.png"> <h3>airplane</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/helicopter.png"> <h3>helicopter</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/ambulance.png"> <h3>ambulance</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/bicycle.png"> <h3>bicycle</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/boat.png"> <h3>boat</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/bus.png"> <h3>bus</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/van.png"> <h3>van</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/fire engine.png"> <h3>fire engine</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/motorcycle.png"> <h3>motorcycle</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/car.png"> <h3>car</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/taxi.png"> <h3>taxi</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/train.png"> <h3>train</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/tractor.png"> <h3>tractor</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/truck.png"> <h3>truck</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/scooter.png"> <h3>scooter</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/jet.png"> <h3>jet</h3> </div>
+            <div class="theRoad"> <img src="fruitFolder/skateboard.png"> <h3>skateboard</h3> </div>
+        </div>
+
+        <div class="homes hide">
+            <h2 class="title"><u>Rooms:</u></h2>
+            <div class="aHome"> <img src="vegetablesFolder/living room.png"> <h3>living room</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/bathroom.png"> <h3>bathroom</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/bedroom.png"> <h3>bedroom</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/kitchen.png"> <h3>kitchen</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/balcony.png"> <h3>balcony</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/terrace.png"> <h3>terrace</h3> </div>
+            <h2 class="title"><u>House furniture:</u></h2>
+            <div class="aHome"> <img src="vegetablesFolder/sofa.png"> <h3>sofa</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/curtain.png"> <h3>curtain</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/table.png"> <h3>table</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/door.png"> <h3>door</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/wardrobe.png"> <h3>wardrobe</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/ceiling.png"> <h3>ceiling</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/window.png"> <h3>window</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/towel.png"> <h3>towel</h3> </div>>
+            <div class="aHome"> <img src="vegetablesFolder/bed.png"> <h3>bed</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/covers.png"> <h3>covers</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/bed sheet.png"> <h3>bed sheet</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/pillow.png"> <h3>pillow</h3> </div>
+            <div class="aHome"> <img src="vegetablesFolder/hunger.png"> <h3>hunger</h3> </div>
+        </div>
+
+        <div class="maths hide">
+            <h2 class="title"><u>Operations:</u></h2>
+            <h3 class="math">+ <br> addition/add/plus </h3>
+            <h3 class="math">- <br> subtraction/subtract/minus</h3>
+            <h3 class="math"> <br> multiplication/multiply/times</h3>
+            <h3 class="math">0 <br> division/divide</h3>
+            <h3 class="math">= <br> equals</h3>
+            <h2 class="title"><u>Numbers:</u></h2>
+            <h3 class="math">0 <br> zero</h3>
+            <h3 class="math">1 <br> one</h3>
+            <h3 class="math">2 <br> two</h3>
+            <h3 class="math">3 <br> three</h3>
+            <h3 class="math">4 <br> four</h3>
+            <h3 class="math">5 <br> five</h3>
+            <h3 class="math">6 <br> six</h3>
+            <h3 class="math">7 <br> seven</h3>
+            <h3 class="math">8 <br> eight</h3>
+            <h3 class="math">9 <br> nine</h3>
+            <h3 class="math">10 <br> ten</h3>
+            <h3 class="math">11 <br> eleven</h3>
+            <h3 class="math">12 <br> twelve</h3>
+            <h3 class="math">13 <br> thirteen</h3>
+            <h3 class="math">14 <br> fourteen</h3>
+            <h3 class="math">15 <br> fifteen</h3>
+            <h3 class="math">16 <br> sixteen</h3>
+            <h3 class="math">17 <br> seventeen</h3>
+            <h3 class="math">18 <br> eighteen</h3>
+            <h3 class="math">19 <br> nineteen</h3>
+            <h3 class="math">20 <br> twenty</h3>
+            <h3 class="math">30 <br> thirty</h3>
+            <h3 class="math">40 <br> forty</h3>
+            <h3 class="math">50 <br> fifty</h3>
+            <h3 class="math">60 <br> sixty</h3>
+            <h3 class="math">70 <br> seventy</h3>
+            <h3 class="math">80 <br> eighty</h3>
+            <h3 class="math">90 <br> ninety</h3>
+            <h3 class="math">100 <br> hundred</h3>
+            <h3 class="math">1000 <br> thousand</h3>
+            <h3 class="math">1000,000 <br> million</h3>
+            <h3 class="math">1000,000,000 <br> billion</h3>
+            <h2 class="title"> <br><br> <u>Ordinal numbers:</u></h2>
+            <h3 class="math">1st <br> First </h3>
+            <h3 class="math">2nd <br> Second </h3>
+            <h3 class="math">3rd <br> Third </h3>
+            <h3 class="math">4th <br> Fourth </h3>
+            <h2 class="title"> <br><br> <u>Geometric shapes:</u></h2>
+            <div class="math"> <img src="mathsFolder/rhombus.png"> <h3>rhombus</h3=> </div>
+            <div class="math"> <img src="mathsFolder/trapezium.png"> <h3>trapezium</h3y> </div>
+            <div class="math"> <img src="mathsFolder/parallelogram.png"> <h3>parallelogram</h3lay> </div>
+            <div class="math"> <img src="mathsFolder/hexagon.png"> <h3>hexagon</h3> </div>
+            <div class="math"> <img src="mathsFolder/circle.png"> <h3>circle</h3y> </div>
+            <div class="math"> <img src="mathsFolder/square.png"> <h3>square</h3> </div>
+            <div class="math"> <img src="mathsFolder/ellipse.png"> <h3>ellipse</h3> </div>
+            <div class="math"> <img src="mathsFolder/right triangle.png"> <h3le.">right triangle</h3y> </div>
+            <div class="math"> <img src="mathsFolder/equilateral triangle.png"> <h3>equilateral triangle</h3le.> </div>
+            <div class="math"> <img src="mathsFolder/isosceles triangle.png"> <h3>isosceles triangle</h3> </div>
+            <div class="math"> <img src="mathsFolder/scalene triangle.png"> <h3>scalene triangle</h3> </div>
+            <div class="math"> <img src="mathsFolder/rectangle.png"> <h3>rectangle</h3.> </div>
+            <div class="math"> <img src="mathsFolder/arrow.png"> <h3)">arrow</h3lay> </div>
+            <h2 class="title"> <br><br> <u>Angles:</u></h2>
+            <div class="math"> <img src="mathsFolder/acute angle.png"> <h3">acute angle</h3> </div>
+            <div class="math"> <img src="mathsFolder/right angle.png"> <h3>right angle</h3> </div>
+            <div class="math"> <img src="mathsFolder/obtuse angle.png"> <h3>obtuse angle</h3> </div>
+            <h2 class="title"> <br><br> <u>3D figures:</u></h2>
+            <div class="math"> <img src="mathsFolder/Cuboid.png"> <h3>Cuboid</h3> </div>
+            <div class="math"> <img src="mathsFolder/Pyramid.png"> <h3>Pyramid</h3> </div>
+            <div class="math"> <img src="mathsFolder/Cube.png"> <h3>Cube</h3y> </div>
+            <div class="math"> <img src="mathsFolder/Cone.png"> <h3>Cone</h3> </div>
+            <div class="math"> <img src="mathsFolder/Cylinder.png"> <h3>Cylinder</h3> </div>
+            <div class="math"> <img src="mathsFolder/Sphere.png"> <h3>Sphere</h3> </div>
+        </div>
+
+        <div class="calendars hide">
+            <h2 class="title"><u>Days of the week:</u></h2>
+            <h3 class="theCalendar"> Monday </h3>
+            <h3 class="theCalendar"> Tuesday </h3>
+            <h3 class="theCalendar"> Wednesday </h3>
+            <h3 class="theCalendar"> Thursday </h3>
+            <h3 class="theCalendar"> Friday </h3>
+            <h3 class="theCalendar"> Saturday </h3>
+            <h3 class="theCalendar"> Sunday </h3> <br> <br> <br> <br> <br> 
+            <h2 class="title"><u>Months of the year:</u></h2>
+            <h3 class="theCalendar"> January </h3>
+            <h3 class="theCalendar"> February </h3>
+            <h3 class="theCalendar"> March </h3>
+            <h3 class="theCalendar"> April </h3>
+            <h3 class="theCalendar"> May </h3>
+            <h3 class="theCalendar"> June </h3>
+            <h3 class="theCalendar"> July </h3>
+            <h3 class="theCalendar"> August </h3>
+            <h3 class="theCalendar"> September </h3>
+            <h3 class="theCalendar"> October </h3>
+            <h3 class="theCalendar"> November </h3>
+            <h3 class="theCalendar"> December </h3>
+            <h2 class="title"><u>Seasons:</u></h2> <br> <br> <br> <br> <br> 
+            <div class="theCalendar"> <img src="fruitFolder/winter.png"> <h3>winter</h3> </div>
+            <div class="theCalendar"> <img src="fruitFolder/spring.png"> <h3>spring</h3> </div>
+            <div class="theCalendar"> <img src="fruitFolder/summer.png"> <h3>summer</h3> </div>
+            <div class="theCalendar"> <img src="fruitFolder/autumn.png"> <h3>autumn</h3> </div>
+        </div>
+
+        <div class="sports hide">
+            <h2 class="title"><u>Sports:</u></h2>
+            <div class="aSport"> <img src="vegetablesFolder/football.png"> <h3>football</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/basketball.png"> <h3>basketball</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/baseball.png"> <h3>baseball</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/volleyball.png"> <h3>volleyball</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/handball.png"> <h3>handball</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/rugby.png"> <h3>rugby</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/ice hockey.png"> <h3>ice hockey</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/figure skating.png"> <h3>figure skating</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/diving.png"> <h3>diving</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/swimming.png"> <h3>swimming</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/surfing.png"> <h3>surfing</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/tennis.png"> <h3>tennis</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/golf.png"> <h3>golf</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/gimnastics.png"> <h3>gymnastics</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/dance.png"> <h3>dance</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/boxing.png"> <h3>boxing</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/karate.png"> <h3>karate</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/weightlifting.png"> <h3>weightlifting</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/cycling.png"> <h3>cycling</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/car racing.png"> <h3>car racing</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/skateboarding.png"> <h3>skateboarding</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/running.png"> <h3>running</h3> </div>
+            <div class="aSport"> <img src="vegetablesFolder/equestrian.png"> <h3>equestrian</h3> </div>
+        </div>
+
+        <div class="Weather hide">
+            <h2 class="title"><u>Weather:</u></h2>
+            <div class="theWeather"> <img src="vegetablesFolder/sun.png"> <h3>sun</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/cloud.png"> <h3>cloud</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/rain.png"> <h3>rain</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/rainbow.png"> <h3>rainbow</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/snow.png"> <h3>snow</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/wind.png"> <h3>wind</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/fog.png"> <h3>fog</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/thunder.png"> <h3>thunder</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/lightning.png"> <h3>lightning</h3> </div>
+            <h2 class="title"><u>Natural disasters:</u></h2>
+            <div class="theWeather"> <img src="vegetablesFolder/earthquake.png"> <h3>earthquake</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/hurricane.png"> <h3>hurricane</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/tornado.png"> <h3>tornado</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/volcano.png"> <h3>volcano</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/tsunami.png"> <h3>tsunami</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/flood.png"> <h3>flood</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/drought.png"> <h3>drought</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/wildfire.png"> <h3>wildfire</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/avalanche.png"> <h3>avalanche</h3> </div>
+            <div class="theWeather"> <img src="vegetablesFolder/storm.png"> <h3>storm</h3> </div>
+        </div>
+
+        <div class="foods hide">
+            <h2 class="title"><u>Liquids:</u></h2>
+            <div class="aFood"> <img src="foodFolder/water.png"> <h3>water</h3> </div>
+            <div class="aFood"> <img src="foodFolder/jus.png"> <h3>jus <br> /smoothie </h3> </div>
+            <div class="aFood"> <img src="foodFolder/coffee.png"> <h3>coffee</h3> </div>
+            <div class="aFood"> <img src="foodFolder/tea.png"> <h3>tea</h3> </div>
+            <div class="aFood"> <img src="foodFolder/milk.png"> <h3>milk</h3> </div>
+            <div class="aFood"> <img src="foodFolder/yogurt.png"> <h3>yogurt</h3> </div>
+            <div class="aFood"> <img src="foodFolder/soup.png"> <h3>soup</h3> </div>
+            <div class="aFood"> <img src="foodFolder/oil.png"> <h3>oil</h3> </div>
+            <div class="aFood"> <img src="foodFolder/honey.png"> <h3>honey</h3> </div>
+            <div class="aFood"> <img src="foodFolder/soda.png"> <h3>soda <br> /lemonade </h3> </div>
+            <h2 class="title"><u>Pastry:</u></h2>
+            <div class="aFood"> <img src="foodFolder/bread.png"> <h3>bread</h3> </div>
+            <div class="aFood"> <img src="foodFolder/toast.png"> <h3>toast</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cake.png"> <h3>cake</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cupcake.png"> <h3>cupcake</h3> </div>
+            <div class="aFood"> <img src="foodFolder/pancake.png"> <h3>pancake</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cookies.png"> <h3>cookies</h3> </div>
+            <div class="aFood"> <img src="foodFolder/biscuit.png"> <h3>biscuit</h3> </div>
+            <div class="aFood"> <img src="foodFolder/doughnuts.png"> <h3>doughnuts</h3> </div>
+            <div class="aFood"> <img src="foodFolder/croissant.png"> <h3>croissant</h3> </div>
+            <div class="aFood"> <img src="foodFolder/baguette.png"> <h3>baguette</h3> </div>
+            <div class="aFood"> <img src="foodFolder/macaroon.png"> <h3>macaroon</h3> </div>
+            <div class="aFood"> <img src="foodFolder/crepe.png"> <h3>crepe</h3> </div>
+            <h2 class="title"><u>Food:</u></h2>
+            <div class="aFood"> <img src="foodFolder/sushi.png"> <h3>sushi</h3> </div>
+            <div class="aFood"> <img src="foodFolder/pizza.png"> <h3>pizza</h3> </div>
+            <div class="aFood"> <img src="foodFolder/burger.png"> <h3>burger</h3> </div>
+            <div class="aFood"> <img src="foodFolder/salade.png"> <h3>salade</h3> </div>
+            <div class="aFood"> <img src="foodFolder/fries.png"> <h3>fries</h3> </div>
+            <div class="aFood"> <img src="foodFolder/spaghetti.png"> <h3>spaghetti</h3> </div>
+            <div class="aFood"> <img src="foodFolder/omelette.png"> <h3>omelette</h3> </div>
+            <h2 class="title"><u>Nuts:</u></h2>
+            <div class="aFood"> <img src="foodFolder/acorn.png"> <h3>acorn</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cashew nuts.png"> <h3>cashew nuts</h3> </div>
+            <div class="aFood"> <img src="foodFolder/hazelnut.png"> <h3>hazelnut</h3> </div>
+            <div class="aFood"> <img src="foodFolder/walnut.png"> <h3>walnut</h3> </div>
+            <div class="aFood"> <img src="foodFolder/peanut.png"> <h3>peanut</h3> </div>
+            <div class="aFood"> <img src="foodFolder/pistachio.png"> <h3>pistachio</h3> </div>
+            <div class="aFood"> <img src="foodFolder/almond.png"> <h3>almond</h3> </div>
+            <h2 class="title"><u>Milk derived:</u></h2>
+            <div class="aFood"> <img src="foodFolder/butter.png"> <h3>butter</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cheese.png"> <h3>cheese</h3> </div>
+            <div class="aFood"> <img src="foodFolder/cream.png"> <h3>cream</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+            <div class="aFood"> <img src="foodFolder/flour.png"> <h3>flour</h3> </div>
+            <div class="aFood"> <img src="foodFolder/sugar.png"> <h3>sugar</h3> </div>
+            <div class="aFood"> <img src="foodFolder/salt.png"> <h3>salt</h3> </div>
+            <div class="aFood"> <img src="foodFolder/oat.png"> <h3>oat</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+            <div class="aFood"> <img src="foodFolder/egg.png"> <h3>egg</h3> </div>
+        </div>
+
+        <div class="schools hide">
+            <h2 class="title"><u>School subjects:</u></h2>
+            <div class="theSchool"> <img src="vegetablesFolder/mathematics.png"> <h3>mathematics</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/science.png"> <h3>science</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/physics.png"> <h3>physics</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/chemistry.png"> <h3>chemistry</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/history.png"> <h3>history</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/geography.png"> <h3>geography</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/language.png"> <h3>language</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/philosophy.png"> <h3>philosophy</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/law.png"> <h3>law</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/art.png"> <h3>art</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/sport.png"> <h3>sport</h3> </div>
+            <h2 class="title"><u>School supplies:</u></h2>
+            <div class="theSchool"> <img src="vegetablesFolder/book.png"> <h3>book</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/pen.png"> <h3>pen</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/pencil.png"> <h3>pencil</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/glue.png"> <h3>glue</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/eraser.png"> <h3>eraser</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/scissors.png"> <h3>scissors</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/backpack.png"> <h3>backpack</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/ruler.png"> <h3>ruler</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/highlighter.png"> <h3>highlighter</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/paper.png"> <h3>paper</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/notebook.png"> <h3>notebook</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/calculator.png"> <h3>calculator</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/sharpener.png"> <h3>sharpener</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/scotch.png"> <h3>scotch</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/folder.png"> <h3>folder</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/pencil case.png"> <h3>pencil case</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/marker.png"> <h3>marker</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/stapler.png"> <h3>stapler</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/corrector.png"> <h3>corrector</h3> </div>
+            <h2 class="title"><u>School environment:</u></h2>
+            <div class="theSchool"> <img src="vegetablesFolder/desk.png"> <h3>desk</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/chair.png"> <h3>chair</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/board.png"> <h3>board</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/uniform.png"> <h3>uniform</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/teacher.png"> <h3>teacher</h3> </div>
+            <div class="theSchool"> <img src="vegetablesFolder/students.png"> <h3>students</h3> </div>
+        </div>
+
+        <div class="colors hide" style="margin: 30px;">
             <div class="title"> <h2>Colors</h2> <img src="categoriesFolder/colors.png">  </div>
             <h2> <u>Most known:</u> </h2> <br>
-            <button style="background-color: red;" onclick="red.play()">red</button>
-            <button style="background-color: pink; color: black" onclick="pink.play()">pink</button>
-            <button style="background-color: gold; color: black;" onclick="gold.play()">gold</button>
-            <button style="background-color: yellow; color: black;" onclick="yellow.play()">yellow</button>
+            <button style="background-color: red;"  onclick="red.play()">red</button>
             <button style="background-color: orange;" onclick="orange.play()">orange</button>
+            <button style="background-color: yellow; color: black;" onclick="yellow.play()">yellow</button>
             <button style="background-color: green;" onclick="green.play()">green</button>
             <button style="background-color: blue;" onclick="blue.play()">blue</button>
             <button style="background-color: purple;" onclick="purple.play()">purple</button>
+            <button style="background-color: pink; color: black" onclick="pink.play()">pink</button>
             <button style="background-color: brown;" onclick="brown.play()">brown</button>
             <button style="background-color: white; color: black;" onclick="white.play()">white</button>
             <button style="background-color: silver; color: black;" onclick="silver.play()">silver</button>
             <button style="background-color: gray;" onclick="gray.play()">gray</button>
             <button style="background-color: black; " onclick="black.play()">black</button> <br><br><br><br>
-            <h2> <u>Less known:</u> </h2> <br>
+            <h2> <u> Less known but frequently used:</u> </h2> <br>
             <button style="background-color: #FF2400;" onclick="scarlet.play()">scarlet</button>
             <button style="background-color: salmon;" onclick="salmon.play()">salmon</button>
             <button style="background-color: ivory; color: black;" onclick="ivory.play()">ivory</button>
             <button style="background-color: beige; color: black;" onclick="beige.play()">beige</button>
             <button style="background-color: #FFDB58; color: black;" onclick="mustard.play()">mustard</button>
-            <button style="background-color: olive;" onclick="olive.play()">olive</button>
             <button style="background-color: #50C878; color: black;" onclick="emerald.play()">emerald</button>
             <button style="background-color: #008080;" onclick="teal.play()">teal</button>
             <button style="background-color: turquoise; color: black;" onclick="turquoise.play()">turquoise</button>
@@ -64,277 +521,303 @@
             <button style="background-color: navy;" onclick="navy.play()">navy</button>
         </div>
 
-    <div class="organs hide">
-        <h2><u>Organs:</u></h2> <br>
-        <div class="image" style="height: 490px; width: 445px; padding: 0px;"> 
-            <img style="height: 490px; width: 445px; " src="organsFolder/organs.png"> 
-            <button class="anOrgan brain" onclick="brain.play()"></button>
-            <button class="anOrgan eyes" onclick="eyes.play()"></button>
-            <button class="anOrgan teeth" onclick="teeth.play()"></button> 
-            <button class="anOrgan oesophagus" onclick="oesophagus.play()"></button> 
-            <button class="anOrgan liver" onclick="liver.play()"></button> 
-            <button class="anOrgan kidney" onclick="kidney.play()"></button> 
-            <button class="anOrgan largeIntestine" onclick="largeIntestine.play()"></button> 
-            <button class="anOrgan head" onclick="head.play()"></button> 
-            <button class="anOrgan ears" onclick="ears.play()"></button> 
-            <button class="anOrgan lungs" onclick="lungs.play()"></button> 
-            <button class="anOrgan heart" onclick="heart.play()"></button> 
-            <button class="anOrgan stomach" onclick="stomach.play()"></button> 
-            <button class="anOrgan smallIntestine" onclick="smallIntestine.play()"></button>
-        </div> <br><br><br>
-        <h2><u>Body parts:</u></h2> <br>
-        <div class="image" style="height: 400px; width: 450px; padding: 0px;"> 
-            <img style="height: 400px; width: 450px; " src="organsFolder/bodyParts.png">
-            <button class="body neck" onclick="neck.play()"></button>
-            <button class="body chest" onclick="chest.play()"></button>
-            <button class="body nipples" onclick="nipples.play()"></button>
-            <button class="body navel" onclick="navel.play()"></button>
-            <button class="body thigh" onclick="thigh.play()"></button>
-            <button class="body knee" onclick="knee.play()"></button>
-            <button class="body leg" onclick="leg.play()"></button>
-            <button class="body toe" onclick="toe.play()"></button>
-            <button class="body waist" onclick="waist.play()"></button>
-            <button class="body foot" onclick="foot.play()"></button>
-            <button class="body shoulder" onclick="shoulder.play()"></button>
-            <button class="body arm" onclick="arm.play()"></button>
-            <button class="body back" onclick="back.play()"></button>
-            <button class="body elbow" onclick="elbow.play()"></button>
-            <button class="body hip" onclick="hip.play()"></button>
-            <button class="body butt" onclick="butt.play()"></button>
-            <button class="body ankle" onclick="ankle.play()"></button>
-            <button class="body heel" onclick="heel.play()"></button>
-        </div> <br><br><br>
-        <h2><u>Face:</u></h2> 
-        <div class="image" style="height: 350px; width: 450px; padding: 0px;"> 
-            <img style="height: 350px; width: 450px; " src="organsFolder/face.png"> 
-            <button class="face hair" onclick="hair.play()"></button> 
-            <button class="face forehead" onclick="forehead.play()"></button> 
-            <button class="face eyelid" onclick="eyelid.play()"></button> 
-            <button class="face nose" onclick="nose.play()"></button> 
-            <button class="face nostrils" onclick="nostrils.play()"></button> 
-            <button class="face lips" onclick="lips.play()"></button> 
-            <button class="face eyebrows" onclick="eyebrows.play()"></button> 
-            <button class="face eyelashes" onclick="eyelashes.play()"></button> 
-            <button class="face cheeks" onclick="cheeks.play()"></button> 
-            <button class="face jaw" onclick="jaw.play()"></button> 
-            <button class="face mouth" onclick="mouth.play()"></button> 
-            <button class="face chin" onclick="chin.play()"></button>
-        </div> <br><br><br>
-        <h2><u>Mouth:</u></h2>
-        <div class="image" style="height: 420px; width: 440px; padding: 0px;"> 
-            <img style="height: 420px; width: 440px; " src="organsFolder/mouth.png">
-            <button class="throat incisors" onclick="incisors.play()"></button>
-            <button class="throat tonsil" onclick="tonsil.play()"></button>
-            <button class="throat tong" onclick="tong.play()"></button>
-            <button class="throat gum" onclick="gum.play()"></button>
-            <button class="throat canine" onclick="canine.play()"></button>
-            <button class="throat uvula" onclick="uvula.play()"></button>
-            <button class="throat molars" onclick="molars.play()"></button>
-            <button class="throat premolars" onclick="premolars.play()"></button>
-        </div> <br><br><br>
-        <h2><u>Hand:</u></h2> 
-        <div class="image" style="height: 250px; width: 435px; padding: 0px;"> 
-            <img style="height: 250px; width: 435px; " src="organsFolder/hand.png">
-            <button class="hand middleFinger" onclick="middleFinger.play()"></button> 
-            <button class="hand ringFinger" onclick="ringFinger.play()"></button> 
-            <button class="hand pinky" onclick="pinky.play()"></button> 
-            <button class="hand palm" onclick="palm.play()"></button>  
-            <button class="hand wrist" onclick="wrist.play()"></button>
-            <button class="hand index" onclick="index.play()"></button> 
-            <button class="hand nails" onclick="nails.play()"></button> 
-            <button class="hand thumb" onclick="thumb.play()"></button> 
-        </div> <br><br><br>
-        <div class="bodyPart">
-            <h2 class="title"><u>Others:</u></h2>
-            <div class="aPart"> <img src="organsFolder/muscles.png"> <h3 onclick="muscles.play()">muscles</h3> </div>
-            <div class="aPart"> <img src="organsFolder/bones.png"> <h3 onclick="bones.play()">bones</h3> </div>
-            <div class="aPart"> <img src="organsFolder/skin.png"> <h3 onclick="skin.play()">skin</h3> </div>
-            <div class="aPart"> <img src="organsFolder/blood vessels.png"> <h3 onclick="bloodVessels.play()">blood vessels</h3> </div>
+        <div class="organs hide">
+            <h2><u>Organs:</u></h2> <br>
+            <div class="image" style="height: 490px; width: 445px; padding: 0px;"> 
+                <img style="height: 490px; width: 445px; " src="organsFolder/organs.png"> 
+                <button class="anOrgan brain" onclick="brain.play()">brain</button>
+                <button class="anOrgan eyes" onclick="eyes.play()">eyes</button>
+                <button class="anOrgan teeth" onclick="teeth.play()">teeth</button> 
+                <button class="anOrgan oesophagus" onclick="oesophagus.play()">oesophagus</button> 
+                <button class="anOrgan liver" onclick="liver.play()">liver</button> 
+                <button class="anOrgan kidney" onclick="kidney.play()">kidney</button> 
+                <button class="anOrgan largeIntestine" onclick="largeIntestine.play()">large intestine</button> 
+                <button class="anOrgan heado" onclick="heado.play()">head</button> 
+                <button class="anOrgan ears" onclick="ears.play()">ears</button> 
+                <button class="anOrgan lungs" onclick="lungs.play()">lungs</button> 
+                <button class="anOrgan heart" onclick="heart.play()">heart</button> 
+                <button class="anOrgan stomach" onclick="stomach.play()">stomach</button> 
+                <button class="anOrgan smallIntestine" onclick="smallIntestine.play()">small intestine</button>
+            </div> <br><br><br>
+            <h2><u>Body parts:</u></h2> <br>
+            <div class="image" style="height: 400px; width: 450px; padding: 0px;"> 
+                <img style="height: 400px; width: 450px; " src="organsFolder/bodyParts.png">
+                <button class="body neck" onclick="neck.play()">neck</button>
+                <button class="body chest" onclick="chest.play()">chest</button>
+                <button class="body nipples" onclick="nipples.play()">nipples</button>
+                <button class="body navel" onclick="navel.play()">navel</button>
+                <button class="body thigh" onclick="thigh.play()">thigh</button>
+                <button class="body knee" onclick="knee.play()">knee</button>
+                <button class="body leg" onclick="leg.play()">leg</button>
+                <button class="body toe" onclick="toe.play()">toe</button>
+                <button class="body waist" onclick="waist.play()">waist</button>
+                <button class="body foot" onclick="foot.play()">foot</button>
+                <button class="body shoulder" onclick="shoulder.play()">shoulder</button>
+                <button class="body arm" onclick="arm.play()">arm</button>
+                <button class="body back" onclick="back.play()">back</button>
+                <button class="body elbow" onclick="elbow.play()">elbow</button>
+                <button class="body hip" onclick="hip.play()">hip</button>
+                <button class="body butt" onclick="butt.play()">butt</button>
+                <button class="body ankle" onclick="ankle.play()">ankle</button>
+                <button class="body heel" onclick="heel.play()">heel</button>
+            </div> <br><br><br>
+            <h2><u>Face:</u></h2> 
+            <div class="image" style="height: 350px; width: 450px; padding: 0px;"> 
+                <img style="height: 350px; width: 450px; " src="organsFolder/face.png"> 
+                <button class="face hair" onclick="hair.play()">hair</button> 
+                <button class="face forehead" onclick="forehead.play()">forehead</button> 
+                <button class="face eyelid" onclick="eyelid.play()">eyelid</button> 
+                <button class="face nose" onclick="nose.play()">nose</button> 
+                <button class="face nostrils" onclick="nostrils.play()">nostrils</button> 
+                <button class="face lips" onclick="lips.play()">lips</button> 
+                <button class="face eyebrows" onclick="eyebrows.play()">eyebrows</button> 
+                <button class="face eyelashes" onclick="eyelashes.play()">eyelashes</button> 
+                <button class="face cheeks" onclick="cheeks.play()">cheeks</button> 
+                <button class="face mouth" onclick="mouth.play()">mouth</button> 
+                <button class="face chin" onclick="chin.play()">chin</button>
+            </div> <br><br><br>
+            <h2><u>Mouth:</u></h2>
+            <div class="image" style="height: 420px; width: 440px; padding: 0px;"> 
+                <img style="height: 420px; width: 440px; " src="organsFolder/mouth.png">
+                <button class="throat incisors" onclick="incisors.play()">incisors</button>
+                <button class="throat tonsil" onclick="tonsil.play()">tonsil</button>
+                <button class="throat tong" onclick="tong.play()">tong</button>
+                <button class="throat canine" onclick="canine.play()">canine</button>
+                <button class="throat uvula" onclick="uvula.play()">uvula</button>
+                <button class="throat molars" onclick="molars.play()">molars</button>
+                <button class="throat premolars" onclick="premolars.play()">premolars</button>
+            </div> <br><br><br>
+            <h2><u>Hand:</u></h2> 
+            <div class="image" style="height: 250px; width: 435px; padding: 0px;"> 
+                <img style="height: 250px; width: 435px; " src="organsFolder/hand.png">
+                <button class="hand middleFinger" onclick="middleFinger.play()">middle finger</button> 
+                <button class="hand ringFinger" onclick="ringFinger.play()">ring finger</button> 
+                <button class="hand pinky" onclick="pinky.play()">pinky</button> 
+                <button class="hand wrist" onclick="wrist.play()">wrist</button>
+                <button class="hand index" onclick="index.play()">index</button> 
+                <button class="hand nails" onclick="nails.play()">nails</button> 
+                <button class="hand thumb" onclick="thumb.play()">thumb</button> 
+            </div> <br><br><br>
+            <div class="bodyPart">
+                <h2 class="title"><u>Senses:</u></h2>
+                <div class="aPart"> <img src="organsFolder/see.png"> <h3 onclick="see.play()">see</h3> </div>
+                <div class="aPart"> <img src="organsFolder/smell.png"> <h3 onclick="smell.play()">smell</h3> </div>
+                <div class="aPart"> <img src="organsFolder/hear.png"> <h3 onclick="hear.play()">hear</h3> </div>
+                <div class="aPart"> <img src="organsFolder/taste.png"> <h3 onclick="taste.play()">taste</h3> </div>
+                <div class="aPart"> <img src="organsFolder/touch.png"> <h3 onclick="touch.play()">touch</h3> </div>
+                <h2 class="title"><u>Others:</u></h2>
+                <div class="aPart"> <img src="organsFolder/muscles.png"> <h3 onclick="muscles.play()">muscles</h3> </div>
+                <div class="aPart"> <img src="organsFolder/bones.png"> <h3 onclick="bones.play()">bones</h3> </div>
+                <div class="aPart"> <img src="organsFolder/skin.png"> <h3 onclick="skin.play()">skin</h3> </div>
+                <div class="aPart"> <img src="organsFolder/blood vessels.png"> <h3 onclick="bloodVessels.play()">blood vessels</h3> </div>
+            </div>
         </div>
-    </div>
 
-    <div class="fruits hide">
+        <div class="fruits hide">
         <h2 class="title"><u>Fruits:</u></h2>
-        <div class="aFruit"> <img src="fruitFolder/loquat.png"> <h3 onclick="loquat.play()">loquat</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/persimmon.png"> <h3 onclick="persimmon.play()">persimmon</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/pomegranate.png"> <h3 onclick="pomegranate.play()">pomegranate</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/plum.png"> <h3 onclick="plum.play()">plum</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/pear.png"> <h3 onclick="pear.play()">pear</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/apricot.png"> <h3 onclick="apricot.play()">apricot</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/nectarine.png"> <h3 onclick="nectarine.play()">nectarine</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/peach.png"> <h3 onclick="peach.play()">peach</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/pineapple.png"> <h3 onclick="pineapple.play()">pineapple</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/papaya.png"> <h3 onclick="papaya.play()">papaya</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/mango.png"> <h3 onclick="mango.play()">mango</h3> </div>    
-        <div class="aFruit"> <img src="fruitFolder/fig.png"> <h3 onclick="fig.play()">fig</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/cherry.png"> <h3 onclick="cherry.play()">cherry</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/raspberry.png"> <h3 onclick="raspberry.play()">raspberry</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/blueberry.png"> <h3 onclick="blueberry.play()">blueberry</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/blackberry.png"> <h3 onclick="blackberry.play()">blackberry</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/strawberry.png"> <h3 onclick="strawberry.play()">strawberry</h3> </div> 
-        <div class="aFruit"> <img src="fruitFolder/coconut.png"> <h3 onclick="coconut.play()">coconut</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/kiwi.png"> <h3 onclick="kiwi.play()">kiwi</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/avocado.png"> <h3 onclick="avocado.play()">avocado</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/grapes.png"> <h3 onclick="grapes.play()">grapes</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/apple.png"> <h3 onclick="apple.play()">apple</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/lemon.png"> <h3 onclick="lemon.play()">lemon</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/dates.png"> <h3 onclick="dates.play()">dates</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/orange.png"> <h3 onclick="orange.play()">orange</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/melon.png"> <h3 onclick="melon.play()">melon</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/watermelon.png"> <h3 onclick="watermelon.play()">watermelon</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/banana.png"> <h3 onclick="banana.play()">banana</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/blueberry.png"> <h3 onclick="blueberry.play()">blueberry</h3> </div>
-        <div class="aFruit"> <img src="fruitFolder/custardApple.png"> <h3 onclick="custardApple.play()">custard apple</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/loquat.png"> <h3>loquat</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/persimmon.png"> <h3>persimmon</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pomegranate.png"> <h3>pomegranate</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/plum.png"> <h3>plum</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pear.png"> <h3>pear</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/apricot.png"> <h3>apricot</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/nectarine.png"> <h3>nectarine</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/peach.png"> <h3>peach</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/pineapple.png"> <h3>pineapple</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/papaya.png"> <h3>papaya</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/mango.png"> <h3>mango</h3> </div>    
+        <div class="aFruit"> <img src="fruitFolder/fig.png"> <h3>fig</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/cherry.png"> <h3>cherry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/raspberry.png"> <h3>raspberry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/blueberry.png"> <h3>blueberry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/blackberry.png"> <h3>blackberry</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/strawberry.png"> <h3>strawberry</h3> </div> 
+        <div class="aFruit"> <img src="fruitFolder/coconut.png"> <h3>coconut</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/kiwi.png"> <h3>kiwi</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/avocado.png"> <h3>avocado</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/grapes.png"> <h3>grapes</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/apple.png"> <h3>apple</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/lemon.png"> <h3>lemon</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/dates.png"> <h3>dates</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/orange.png"> <h3>orange</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/melon.png"> <h3>melon</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/watermelon.png"> <h3>watermelon</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/banana.png"> <h3>banana</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/dragonFruit.png"> <h3>dragon fruit</h3> </div>
+        <div class="aFruit"> <img src="fruitFolder/custardApple.png"> <h3>custard apple</h3> </div>
+        </div>
+
+        <div class="vegetables hide">
+            <h2 class="title"><u>Vegetables:</u></h2>
+            <div class="aVegetable"> <img src="vegetablesFolder/cauliflower.png"> <h3>cauliflower</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/cabbage.png"> <h3>cabbage</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/lettuce.png"> <h3>lettuce</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/zucchini.png"> <h3>zucchini</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/parsley.png"> <h3>parsley</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/eggplant.png"> <h3>eggplant</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/beet.png"> <h3>beet</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/turnip.png"> <h3>turnip</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/radish.png"> <h3>radish</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/tomato.png"> <h3>tomato</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/potato.png"> <h3>potato</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/sweet potato.png"> <h3>sweet potato</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/mushroom.png"> <h3>mushroom</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/garlic.png"> <h3>garlic</h3> </div>    
+            <div class="aVegetable"> <img src="vegetablesFolder/onion.png"> <h3>onion</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/carrot.png"> <h3>carrot</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/broccoli.png"> <h3>broccoli</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/pea.png"> <h3>pea</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/celery.png"> <h3>celery</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/artichoke.png"> <h3>artichoke</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/cucumber.png"> <h3>cucumber</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/pumpkin.png"> <h3>pumpkin</h3> </div>      
+            <div class="aVegetable"> <img src="vegetablesFolder/chili pepper.png"> <h3>chili pepper</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/ginger.png"> <h3>ginger</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/tumeric.png"> <h3>tumeric</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/cloves.png"> <h3>cloves</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/fennel.png"> <h3>fennel</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/cumin.png"> <h3>cumin</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/saffron.png"> <h3>saffron</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/cinnamon.png"> <h3>cinnamon</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/rosemary.png"> <h3>rosemary</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/vanilla.png"> <h3>vanilla</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/lentils.png"> <h3>lentils</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/split pea.png"> <h3>split pea</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/chick pea.png"> <h3>chick pea</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/lima bean.png"> <h3>lima bean</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/fava bean.png"> <h3>fava bean</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/pumpkin.png"> <h3>pumpkin</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/rice.png"> <h3>rice</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/olive.png"> <h3>olive</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/rice.png"> <h3>rice</h3> </div>
+            <div class="aVegetable"> <img src="vegetablesFolder/rice.png"> <h3>rice</h3> </div>
+        </div>
+
+        <div class="kitchenTools hide">
+            <h2 class="title"><u>Kitchen utensils:</u></h2>
+            <div class="tools"> <img src="kitchenFolder/apron.png"> <h3>apron</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/kettle.png"> <h3>kettle</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/faucet.png"> <h3>faucet/tap</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/strainer.png"> <h3>strainer</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/tray.png"> <h3>tray</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/grater.png"> <h3>grater</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/funnel.png"> <h3>funnel</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/rolling pin.png"> <h3>rolling pin</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/napkin.png"> <h3>napkin</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/dish drainer.png"> <h3>dish drainer</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/mold.png"> <h3>mold</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/whisk.png"> <h3>whisk</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/glass.png"> <h3>glass</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/cup.png"> <h3>cup</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/mug.png"> <h3>mug</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/bowl.png"> <h3>bowl</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/jar.png"> <h3>jar</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/teapot.png"> <h3>teapot</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/peeler.png"> <h3>peeler</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/bottle.png"> <h3>bottle</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/plate.png"> <h3>plate</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/pan.png"> <h3>pan</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/spatula.png"> <h3>spatula</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/knife.png"> <h3>knife</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/spoon.png"> <h3>spoon</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/fork.png"> <h3>fork</h3> </div> 
+            <div class="tools"> <img src="kitchenFolder/sink.png"> <h3>sink</h3> </div> 
+            <div class="tools"> <img src="kitchenFolder/pressure cooker.png"> <h3>pressure cooker</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/chopping board.png"> <h3>chopping board</h3> </div>
+            <h2 class="title"> <br><br><br> <u>Kitchen electronics:</u></h2>
+            <div class="tools"> <img src="kitchenFolder/stove.png"> <h3>stove</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/scale.png"> <h3>scale</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/oven.png"> <h3>oven</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/fridge.png"> <h3>fridge</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/mixer.png"> <h3>mixer</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/blender.png"> <h3>blender</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/microwave.png"> <h3>microwave</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/dish washer.png"> <h3>dish washer</h3> </div>
+            <div class="tools"> <img src="kitchenFolder/washing machine.png"> <h3>washing machine</h3> </div>
+        </div>
+
+        <div class="animals hide">
+            <h2 class="title"><u>Animals:</u></h2>
+            <div class="animal"> <img src="animalFolder/antelope.png"> <h3>antelope</h3> </div>
+            <div class="animal"> <img src="animalFolder/reindeer.png"> <h3>reindeer</h3> </div> 
+            <div class="animal"> <img src="animalFolder/deer.png"> <h3>deer</h3> </div>
+            <div class="animal"> <img src="animalFolder/squirrel.png"> <h3>squirrel</h3> </div>
+            <div class="animal"> <img src="animalFolder/hedgehog.png"> <h3>hedgehog</h3> </div>
+            <div class="animal"> <img src="animalFolder/ram.png"> <h3>ram</h3> </div>
+            <div class="animal"> <img src="animalFolder/sheep.png"> <h3>sheep</h3> </div>
+            <div class="animal"> <img src="animalFolder/goat.png"> <h3>goat</h3> </div>
+            <div class="animal"> <img src="animalFolder/cow.png"> <h3>cow</h3> </div>
+            <div class="animal"> <img src="animalFolder/bull.png"> <h3 >bull</h3> </div>
+            <div class="animal"> <img src="animalFolder/camel.png"> <h3>camel</h3> </div> 
+            <div class="animal"> <img src="animalFolder/leopard.png"> <h3>leopard</h3> </div>
+            <div class="animal"> <img src="animalFolder/tiger.png"> <h3>tiger</h3> </div>
+            <div class="animal"> <img src="animalFolder/lion.png"> <h3>lion</h3> </div>   
+            <div class="animal"> <img src="animalFolder/bear.png"> <h3>bear</h3> </div>
+            <div class="animal"> <img src="animalFolder/panda.png"> <h3>panda</h3> </div>
+            <div class="animal"> <img src="animalFolder/koala.png"> <h3>koala</h3> </div>
+            <div class="animal"> <img src="animalFolder/monkey.png"> <h3>monkey</h3> </div>
+            <div class="animal"> <img src="animalFolder/giraffe.png"> <h3>giraffe</h3> </div>
+            <div class="animal"> <img src="animalFolder/elephant.png"> <h3>elephant</h3> </div>
+            <div class="animal"> <img src="animalFolder/hippopotamus.png"> <h3>hippopotamus</h3> </div>
+            <div class="animal"> <img src="animalFolder/rhinoceros.png"> <h3>rhinoceros</h3> </div>
+            <div class="animal"> <img src="animalFolder/crocodile.png"> <h3>crocodile</h3> </div>
+            <div class="animal"> <img src="animalFolder/donkey.png"> <h3>donkey</h3> </div>
+            <div class="animal"> <img src="animalFolder/zebra.png"> <h3>zebra</h3> </div>
+            <div class="animal"> <img src="animalFolder/horse.png"> <h3>horse</h3> </div>
+            <div class="animal"> <img src="animalFolder/snake.png"> <h3>snake</h3> </div>
+            <div class="animal"> <img src="animalFolder/turtle.png"> <h3>turtle</h3> </div>
+            <div class="animal"> <img src="animalFolder/chameleon.png"> <h3>chameleon</h3> </div>
+            <div class="animal"> <img src="animalFolder/lizard.png"> <h3>lizard</h3> </div>
+            <div class="animal"> <img src="animalFolder/cat.png"> <h3>cat</h3> </div>
+            <div class="animal"> <img src="animalFolder/dog.png"> <h3>dog</h3> </div>
+            <div class="animal"> <img src="animalFolder/fox.png"> <h3>fox</h3> </div>
+            <div class="animal"> <img src="animalFolder/wolf.png"> <h3>wolf</h3> </div>
+            <div class="animal"> <img src="animalFolder/bat.png"> <h3>bat</h3> </div>
+            <div class="animal"> <img src="animalFolder/rat.png"> <h3>rat</h3> </div>
+            <div class="animal"> <img src="animalFolder/mouse.png"> <h3>mouse</h3> </div>
+            <div class="animal"> <img src="animalFolder/hamster.png"> <h3>hamster</h3> </div>
+            <div class="animal"> <img src="animalFolder/rabbit.png"> <h3>rabbit</h3> </div>
+            <div class="animal"> <img src="animalFolder/kangaroo.png"> <h3>kangaroo</h3> </div>
+            <div class="animal"> <img src="animalFolder/penguin.png"> <h3>penguin</h3> </div>
+            <div class="animal"> <img src="animalFolder/flamingo.png"> <h3>flamingo</h3> </div>
+            <div class="animal"> <img src="animalFolder/ostrich.png"> <h3>ostrich</h3> </div>
+            <div class="animal"> <img src="animalFolder/turkey.png"> <h3>turkey</h3> </div>
+            <div class="animal"> <img src="animalFolder/chicken.png"> <h3>chicken</h3> </div>
+            <div class="animal"> <img src="animalFolder/duck.png"> <h3>duck</h3> </div>
+            <div class="animal"> <img src="animalFolder/bird.png"> <h3>bird</h3> </div>
+            <div class="animal"> <img src="animalFolder/parrot.png"> <h3>parrot</h3> </div>
+            <div class="animal"> <img src="animalFolder/owl.png"> <h3>owl</h3> </div>
+            <h2 class="title"><u>Sea animals:</u></h2>
+            <div class="animal"> <img src="animalFolder/sea urchin.png"> <h3>sea urchin</h3> </div>
+            <div class="animal"> <img src="animalFolder/stingray.png"> <h3>stingray</h3> </div>
+            <div class="animal"> <img src="animalFolder/oyster.png"> <h3>oyster</h3> </div>
+            <div class="animal"> <img src="animalFolder/mussels.png"> <h3>mussels</h3> </div>
+            <div class="animal"> <img src="animalFolder/dolphin.png"> <h3>dolphin</h3> </div>
+            <div class="animal"> <img src="animalFolder/whale.png"> <h3>whale</h3> </div>
+            <div class="animal"> <img src="animalFolder/shark.png"> <h3>shark</h3> </div>
+            <div class="animal"> <img src="animalFolder/fish.png"> <h3>fish</h3> </div>
+            <div class="animal"> <img src="animalFolder/jellyfish.png"> <h3>jellyfish</h3> </div>
+            <div class="animal"> <img src="animalFolder/crab.png"> <h3>crab</h3> </div>
+            <div class="animal"> <img src="animalFolder/shrimp.png"> <h3>shrimp</h3> </div>
+            <div class="animal"> <img src="animalFolder/lobster.png"> <h3>lobster</h3> </div>
+            <div class="animal"> <img src="animalFolder/octopus.png"> <h3>octopus</h3> </div>
+            <div class="animal"> <img src="animalFolder/tuna.png"> <h3>tuna</h3> </div>
+            <div class="animal"> <img src="animalFolder/calamari.png"> <h3>calamari</h3> </div>
+            <h2 class="title"><u>Insects:</u></h2>
+            <div class="animal"> <img src="animalFolder/cockroach.png"> <h3>cockroach</h3> </div>
+            <div class="animal"> <img src="animalFolder/ladybug.png"> <h3>ladybug</h3> </div>
+            <div class="animal"> <img src="animalFolder/bee.png"> <h3>bee</h3> </div>
+            <div class="animal"> <img src="animalFolder/butterfly.png"> <h3>butterfly</h3> </div>
+            <div class="animal"> <img src="animalFolder/snail.png"> <h3>snail</h3> </div>
+            <div class="animal"> <img src="animalFolder/mosquito.png"> <h3>mosquito</h3> </div>
+            <div class="animal"> <img src="animalFolder/spider.png"> <h3>spider</h3> </div>
+            <div class="animal"> <img src="animalFolder/ants.png"> <h3>ants</h3> </div>
+            <div class="animal"> <img src="animalFolder/cricket.png"> <h3>cricket</h3> </div>
+            <div class="animal"> <img src="animalFolder/fly.png"> <h3>fly</h3> </div>
+            <div class="animal"> <img src="animalFolder/worm.png"> <h3>worm</h3> </div>
+        </div>
+
     </div>
-
-    <div class="vegetables hide">
-        <h2 class="title"><u>Vegetables:</u></h2>
-        <div class="aVegetable"> <img src="vegetablesFolder/cauliflower.png"> <h3 onclick="cauliflower.play()">cauliflower</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/cabbage.png"> <h3 onclick="cabbage.play()">cabbage</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/lettuce.png"> <h3 onclick="lettuce.play()">lettuce</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/zucchini.png"> <h3 onclick="zucchini.play()">zucchini</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/parsley.png"> <h3 onclick="parsley.play()">parsley</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/eggplant.png"> <h3 onclick="eggplant.play()">eggplant</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/beet.png"> <h3 onclick="beet.play()">beet</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/turnip.png"> <h3 onclick="turnip.play()">turnip</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/radish.png"> <h3 onclick="radish.play()">radish</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/tomato.png"> <h3 onclick="tomato.play()">tomato</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/potato.png"> <h3 onclick="potato.play()">potato</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/sweet potato.png"> <h3 onclick="sweetPotato.play()">sweet potato</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/mushroom.png"> <h3 onclick="mushroom.play()">mushroom</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/garlic.png"> <h3 onclick="garlic.play()">garlic</h3> </div>    
-        <div class="aVegetable"> <img src="vegetablesFolder/onion.png"> <h3 onclick="onion.play()">onion</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/carrot.png"> <h3 onclick="carrot.play()">carrot</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/broccoli.png"> <h3 onclick="broccoli.play()">broccoli</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/pea.png"> <h3 onclick="pea.play()">pea</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/celery.png"> <h3 onclick="celery.play()">celery</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/artichoke.png"> <h3 onclick="artichoke.play()">artichoke</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/cucumber.png"> <h3 onclick="cucumber.play()">cucumber</h3> </div>
-        <div class="aVegetable"> <img src="vegetablesFolder/pumpkin.png"> <h3 onclick="pumpkin.play()">pumpkin</h3> </div>      
-        <div class="aVegetable"> <img src="vegetablesFolder/chili pepper.png"> <h3 onclick="chiliPepper.play()">chili pepper</h3> </div>
-    </div>
-
-    <div class="kitchenTools hide">
-        <h2 class="title"><u>Kitchen utensils:</u></h2>
-        <div class="tools"> <img src="kitchenFolder/grater.png"> <h3 onclick="grater.play()">grater</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/funnel.png"> <h3 onclick="funnel.play()">funnel</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/kettle.png"> <h3 onclick="kettle.play()">kettle</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/faucet.png"> <h3 onclick="faucet.play()">faucet</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/strainer.png"> <h3 onclick="strainer.play()">strainer</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/tray.png"> <h3 onclick="tray.play()">tray</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/apron.png"> <h3 onclick="apron.play()">apron</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/rolling pin.png"> <h3 onclick="rollingPin.play()">rolling pin</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/napkin.png"> <h3 onclick="napkin.play()">napkin</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/dish drainer.png"> <h3 onclick="dishDrainer.play()">dish drainer</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/mold.png"> <h3 onclick="mold.play()">mold</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/whisk.png"> <h3 onclick="whisk.play()">whisk</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/glass.png"> <h3 onclick="glass.play()">glass</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/cup.png"> <h3 onclick="cup.play()">cup</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/mug.png"> <h3 onclick="mug.play()">mug</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/bowl.png"> <h3 onclick="bowl.play()">bowl</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/jar.png"> <h3 onclick="jar.play()">jar</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/teapot.png"> <h3 onclick="teapot.play()">teapot</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/peeler.png"> <h3 onclick="peeler.play()">peeler</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/bottle.png"> <h3 onclick="bottle.play()">bottle</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/plate.png"> <h3 onclick="plate.play()">plate</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/pan.png"> <h3 onclick="pan.play()">pan</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/spatula.png"> <h3 onclick="spatula.play()">spatula</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/knife.png"> <h3 onclick="knife.play()">knife</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/spoon.png"> <h3 onclick="spoon.play()">spoon</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/fork.png"> <h3 onclick="fork.play()">fork</h3> </div> 
-        <div class="tools"> <img src="kitchenFolder/sink.png"> <h3 onclick="sink.play()">sink</h3> </div> 
-        <div class="tools"> <img src="kitchenFolder/pressure cooker.png"> <h3 onclick="pressureCooker.play()">pressure cooker</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/chopping board.png"> <h3 onclick="choppingBoard.play()">chopping board</h3> </div>
-        <h2 class="title"> <br><br><br> <u>Kitchen electronics:</u></h2>
-        <div class="tools"> <img src="kitchenFolder/stove.png"> <h3 onclick="stove.play()">stove</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/scale.png"> <h3 onclick="scale.play()">scale</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/oven.png"> <h3 onclick="oven.play()">oven</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/fridge.png"> <h3 onclick="fridge.play()">fridge</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/mixer.png"> <h3 onclick="mixer.play()">mixer</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/blender.png"> <h3 onclick="blender.play()">blender</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/microwave.png"> <h3 onclick="microwave.play()">microwave</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/dish washer.png"> <h3 onclick="dishWasher.play()">dish washer</h3> </div>
-        <div class="tools"> <img src="kitchenFolder/washing machine.png"> <h3 onclick="washingMachine.play()">washing machine</h3> </div>
-    </div>
-
-
-    <div class="nature hide">
-        <h2 class="title"><u>Animals:</u></h2>
-        <div class="Nature"> <img src="animalFolder/camel.png"> <h3 onclick="camel.play()">camel</h3> </div> 
-        <div class="Nature"> <img src="animalFolder/antelope.png"> <h3 onclick="antelope.play()">antelope</h3> </div>
-        <div class="Nature"> <img src="animalFolder/reindeer.png"> <h3 onclick="reindeer.play()">reindeer</h3> </div> 
-        <div class="Nature"> <img src="animalFolder/deer.png"> <h3 onclick="deer.play()">deer</h3> </div>
-        <div class="Nature"> <img src="animalFolder/squirrel.png"> <h3 onclick="squirrel.play()">squirrel</h3> </div>
-        <div class="Nature"> <img src="animalFolder/leopard.png"> <h3 onclick="leopard.play()">leopard</h3> </div>
-        <div class="Nature"> <img src="animalFolder/bear.png"> <h3 onclick="bear.play()">bear</h3> </div>
-        <div class="Nature"> <img src="animalFolder/wolf.png"> <h3 onclick="wolf.play()">wolf</h3> </div>
-        <div class="Nature"> <img src="animalFolder/goat.png"> <h3 onclick="goat.play()">goat</h3> </div>
-        <div class="Nature"> <img src="animalFolder/cow.png"> <h3 onclick="cow.play()">cow</h3> </div>
-        <div class="Nature"> <img src="animalFolder/owl.png"> <h3 onclick="owl.play()">owl</h3> </div>
-        <div class="Nature"> <img src="animalFolder/sheep.png"> <h3 onclick="sheep.play()">sheep</h3> </div>
-        <div class="Nature"> <img src="animalFolder/duck.png"> <h3 onclick="duck.play()">duck</h3> </div>
-        <div class="Nature"> <img src="animalFolder/bat.png"> <h3 onclick="bat.play()">bat</h3> </div>
-        <div class="Nature"> <img src="animalFolder/ostrich.png"> <h3 onclick="ostrich.play()">ostrich</h3> </div>
-        <div class="Nature"> <img src="animalFolder/goat.png"> <h3 onclick="goat.play()">goat</h3> </div>
-        <div class="Nature"> <img src="animalFolder/rat.png"> <h3 onclick="rat.play()">rat</h3> </div>
-        <div class="Nature"> <img src="animalFolder/hedgehog.png"> <h3 onclick="hedgehog.play()">hedgehog</h3> </div>
-        <div class="Nature"> <img src="animalFolder/koala.png"> <h3 onclick="koala.play()">koala</h3> </div>
-        <div class="Nature"> <img src="animalFolder/giraffe.png"> <h3 onclick="giraffe.play()">giraffe</h3> </div>
-        <div class="Nature"> <img src="animalFolder/elephant.png"> <h3 onclick="elephant.play()">elephant</h3> </div>
-        <div class="Nature"> <img src="animalFolder/hippopotamus.png"> <h3 onclick="hippopotamus.play()">hippopotamus</h3> </div>
-        <div class="Nature"> <img src="animalFolder/panda.png"> <h3 onclick="panda.play()">panda</h3> </div>
-        <div class="Nature"> <img src="animalFolder/tiger.png"> <h3 onclick="tiger.play()">tiger</h3> </div>
-        <div class="Nature"> <img src="animalFolder/lion.png"> <h3 onclick="lion.play()">lion</h3> </div>   
-        <div class="Nature"> <img src="animalFolder/kangaroo.png"> <h3 onclick="kangaroo.play()">kangaroo</h3> </div>
-        <div class="Nature"> <img src="animalFolder/crocodile.png"> <h3 onclick="crocodile.play()">crocodile</h3> </div>
-        <div class="Nature"> <img src="animalFolder/rhinoceros.png"> <h3 onclick="rhinoceros.play()">rhinoceros</h3> </div>
-        <div class="Nature"> <img src="animalFolder/cat.png"> <h3 onclick="cat.play()">cat</h3> </div>
-        <div class="Nature"> <img src="animalFolder/dog.png"> <h3 onclick="dog.play()">dog</h3> </div>
-        <div class="Nature"> <img src="animalFolder/bird.png"> <h3 onclick="bird.play()">bird</h3> </div>
-        <div class="Nature"> <img src="animalFolder/donkey.png"> <h3 onclick="donkey.play()">donkey</h3> </div>
-        <div class="Nature"> <img src="animalFolder/rabbit.png"> <h3 onclick="rabbit.play()">rabbit</h3> </div>
-        <div class="Nature"> <img src="animalFolder/zebra.png"> <h3 onclick="zebra.play()">zebra</h3> </div>
-        <div class="Nature"> <img src="animalFolder/fox.png"> <h3 onclick="fox.play()">fox</h3> </div>
-        <div class="Nature"> <img src="animalFolder/horse.png"> <h3 onclick="horse.play()">horse</h3> </div>
-        <div class="Nature"> <img src="animalFolder/mouse.png"> <h3 onclick="mouse.play()">mouse</h3> </div>
-        <div class="Nature"> <img src="animalFolder/monkey.png"> <h3 onclick="monkey.play()">monkey</h3> </div>
-        <div class="Nature"> <img src="animalFolder/snake.png"> <h3 onclick="snake.play()">snake</h3> </div>
-        <div class="Nature"> <img src="animalFolder/turtle.png"> <h3 onclick="turtle.play()">turtle</h3> </div>
-        <div class="Nature"> <img src="animalFolder/hamster.png"> <h3 onclick="hamster.play()">hamster</h3> </div>
-        <div class="Nature"> <img src="animalFolder/parrot.png"> <h3 onclick="parrot.play()">parrot</h3> </div>
-        <div class="Nature"> <img src="animalFolder/chicken.png"> <h3 onclick="chicken.play()">chicken</h3> </div>
-        <div class="Nature"> <img src="animalFolder/bull.png"> <h3 onclick="bull.play()">bull</h3> </div>
-        <div class="Nature"> <img src="animalFolder/turkey.png"> <h3 onclick="turkey.play()">turkey</h3> </div>
-        <div class="Nature"> <img src="animalFolder/chameleon.png"> <h3 onclick="chameleon.play()">chameleon</h3> </div>
-        <div class="Nature"> <img src="animalFolder/penguin.png"> <h3 onclick="penguin.play()">penguin</h3> </div>
-        <h2 class="title"><u>Sea animals:</u></h2>
-        <div class="Nature"> <img src="animalFolder/sea urchin.png"> <h3 onclick="seaUrchin.play()">sea urchin</h3> </div>
-        <div class="Nature"> <img src="animalFolder/stingray.png"> <h3 onclick="stingray.play()">stingray</h3> </div>
-        <div class="Nature"> <img src="animalFolder/oyster.png"> <h3 onclick="oyster.play()">oyster</h3> </div>
-        <div class="Nature"> <img src="animalFolder/fish.png"> <h3 onclick="fish.play()">fish</h3> </div>
-        <div class="Nature"> <img src="animalFolder/dolphin.png"> <h3 onclick="dolphin.play()">dolphin</h3> </div>
-        <div class="Nature"> <img src="animalFolder/whale.png"> <h3 onclick="whale.play()">whale</h3> </div>
-        <div class="Nature"> <img src="animalFolder/jellyfish.png"> <h3 onclick="jellyfish.play()">jellyfish</h3> </div>
-        <div class="Nature"> <img src="animalFolder/crab.png"> <h3 onclick="crab.play()">crab</h3> </div>
-        <div class="Nature"> <img src="animalFolder/shell.png"> <h3 onclick="shell.play()">shell</h3> </div>
-        <div class="Nature"> <img src="animalFolder/octopus.png"> <h3 onclick="octopus.play()">octopus</h3> </div>
-        <div class="Nature"> <img src="animalFolder/shark.png"> <h3 onclick="shark.play()">shark</h3> </div>
-        <div class="Nature"> <img src="animalFolder/shrimp.png"> <h3 onclick="shrimp.play()">shrimp</h3> </div>
-        <div class="Nature"> <img src="animalFolder/lobster.png"> <h3 onclick="lobster.play()">lobster</h3> </div>
-        <div class="Nature"> <img src="animalFolder/tuna.png"> <h3 onclick="tuna.play()">tuna</h3> </div>
-        <div class="Nature"> <img src="animalFolder/calamari.png"> <h3 onclick="calamari.play()">calamari</h3> </div>
-        <h2 class="title"><u>Insects:</u></h2>
-        <div class="Nature"> <img src="animalFolder/ladybug.png"> <h3 onclick="ladybug.play()">ladybug</h3> </div>
-        <div class="Nature"> <img src="animalFolder/bee.png"> <h3 onclick="bee.play()">bee</h3> </div>
-        <div class="Nature"> <img src="animalFolder/butterfly.png"> <h3 onclick="butterfly.play()">butterfly</h3> </div>
-        <div class="Nature"> <img src="animalFolder/snail.png"> <h3 onclick="snail.play()">snail</h3> </div>
-        <div class="Nature"> <img src="animalFolder/dog.png"> <h3 onclick="dog.play()">dog</h3> </div>
-        <div class="Nature"> <img src="animalFolder/dog.png"> <h3 onclick="dog.play()">dog</h3> </div>
-
-    </div>
-
-    </div>
-
 
     <script src="script.js"></script>
 
